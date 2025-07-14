@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <!-- fav icon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2361/2361657.png">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Michroma&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      font-family: "Open Sans", sans-serif;
+      padding: 0;
+      margin: 0;
+
+    }
+
+    #home h1 {
+      font-family: "Noto Serif Display", serif;
+    }
+
+    h4 {
+      font-family: "Inconsolata", monospace;
+    }
+
+    h2 {
+      font-family: "Noto Serif Display", serif;
+    }
+
+    #Review i {
+      color: gold;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="bg-dark text-light py-2">
+      <p class="text-center ">Extra Rs.2000 Off On Beds Above Rs.15000!</p>
+    </div>
+    <nav class="navbar navbar-expand-lg  bg-body-tertiary ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-couch"></i> Woody</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        <i class="fa-solid fa-cart-shopping fa-beat-fade p-3 fs-3"></i>
+      </div>
+    </nav>
+  </header>
+  <section id="home">
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cdn.pixabay.com/photo/2017/08/02/01/01/living-room-2569325_1280.jpg" height="600px"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2017/08/27/10/16/interior-2685521_1280.jpg" height="600px"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg" height="600px"
+              class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1 class=" text-center my-3">Top Picks For You</h1>
+      <br><br>
+      <div class="row px-6 mx-1">
+        <div class="col-3 text-center"><img
+            src="https://images.woodenstreet.de/image/cache/data/rocking-chairs/margot-rocking-chair-walnut-finish/cream-stripe/product/new-logo/1-750x650.jpg"
+            width="200px" height="200px" class="rounded-circle shadow-lg" alt="">
+          <h6 class="p-3">Chairs</h6>
+        </div>
+        <div class="col-3 text-center"><img
+            src="https://ik.imagekit.io/2xkwa8s1i/img/npl_modified_images/npl_images_server/SOFA_WSSFASTFNN2FMSGGB/SOFA_WSSFASTFNN2FMSGGB_1.jpg?tr=w-3840"
+            width="200px" height="200px" class="rounded-circle shadow-lg" alt="">
+          <h6 class="p-3">Sofas</h6>
+        </div>
+        <div class="col-3 text-center"><img
+            src="https://dukaan.b-cdn.net/700x700/webp/upload_file_service/639b4cae-17d8-4350-bb35-f152086db7fe/6c3440ccddd5409f80d68ebd756058d2.webp"
+            width="200px" height="200px" class="rounded-circle shadow-lg" alt="">
+          <h6 class="p-3">Beds</h6>
+        </div>
+        <div class="col-3 text-center"><img
+            src="https://image.made-in-china.com/202f0j00vACcjkVgSoqH/Atunus-Nordic-Minimalist-Solid-Wood-Bedside-Table-Simple-Modern-Small-Home-Bedroom-Night-Stand-Locker-with-Double-Drawers.jpg"
+            width="200px" height="200px" class="rounded-circle shadow-lg" alt="">
+          <h6 class="p-3">Night Stands</h6>
+        </div>
+      </div>
+      <div class="row px-6 mx-1">
+        <div class="col-3 text-center"><img
+            src="https://images-cdn.ubuy.co.in/669dfbf8edcbd206c74a3a40-round-dining-table-for-4-to-6-47-2.jpg"
+            width="200px" height="200px" class="rounded-circle shadow-lg" alt="">
+          <h6 class="p-3">Tables</h6>
+        </div>
+        <div class="col-3 text-center"><img src="https://m.media-amazon.com/images/I/712i2n2h5+L.jpg" width="200px"
+            height="200px" class="rounded-circle shadow-lg" alt="">
+          <h6 class="p-3">Armoire</h6>
+        </div>
+        <div class="col-3 text-center"><img
+            src="https://sonaarts.in/wp-content/uploads/2025/01/Sleek-Oak-Bookcase-with-Glass-Doors-and-Closed-Cabinet-%E2%80%93-Modern-Home-and-Office-Storage-1.webp"
+            width="200px" height="200px" class="rounded-circle shadow-lg" alt="">
+          <h6 class="p-3">Bookcases</h6>
+        </div>
+        <div class="col-3 text-center"><img
+            src="https://woodbuzz.in/cdn/shop/files/Walnut01_64d3e0d2-3664-457c-9200-151cf2441520.jpg?v=1721886992"
+            width="200px" height="200px" class="rounded-circle shadow-lg" alt="">
+          <h6 class="p-3">TV Units</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="p-3">
+    <div class="header">
+      <h2 class="text-center ">Elegance, Craftsmanship, And Enduring Value</h2>
+    </div>
+    <br><br>
+    <div class="container">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://birchwoodfurniture.ca/wp-content/uploads/2023/07/Modern-Living-Room-Furniture-Ideas-Hero-scaled.jpg"
+              class="d-block w-100" height="800px" alt="...">
+          </div>
+          <div class="carousel-item ">
+            <img
+              src="https://www.beautifulhomes.asianpaints.com/content/dam/asianpaintsbeautifulhomes/home-decor-advice/guides-and-how-tos/choosing-living-room-furniture/Title-living-room-interior-design.jpg"
+              class="d-block w-100 " height="800px" alt="...">
+          </div>
+          <div class="carousel-item ">
+            <img
+              src="https://www.bhg.com/thmb/dcA2PxsOahxmk2LgzWAaqOWFfxU=/6000x0/filters:no_upscale():strip_icc()/200522-EB_12-Living-Room_1267-b13debcb440a4471981d7ac637e76e7a.jpg"
+              class="d-block w-100 " height="800px" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <br><br><br><br>
+  <section id="Review">
+    <div class="container">
+      <h2 class=" text-center my-3">Ratings And Reviews</h2>
+      <br> <br>
+      <h1 class="fw-bold ">4.6</h1>
+      <h6 class="info">From 33,63 Ratings</h6>
+      5<i class="fa-solid fa-star"></i>
+      <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped" style="width: 85%"></div>
+      </div>
+      <br><br>
+      4<i class="fa-solid fa-star"></i>
+      <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+      </div>
+      <br><br>
+      3<i class="fa-solid fa-star"></i>
+      <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped " style="width: 50%"></div>
+      </div>
+      <br><br>
+      2<i class="fa-solid fa-star"></i>
+      <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped " style="width: 20%"></div>
+      </div>
+      <br><br>
+      1<i class="fa-solid fa-star"></i>
+      <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped " style="width: 5%"></div>
+      </div>
+      <br><br>
+      <!-- Card -->
+      <div class="row  justify-content-lg-between flex">
+        <div class="card " style="width: 18rem;">
+          <img src="https://images.indianexpress.com/2024/05/shah-rukh-khan-1.jpg?w=414" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">SRK</h5>
+            <p class="card-text">Shah Rukh Khan share the minimalist and contemporary vision they had for their space...
+            </p>
+          </div>
+        </div>
+        <div class="card " style="width: 18rem;">
+          <img src="https://thedailyguardian.com/wp-content/uploads/2024/05/Mohanlal_TDG.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mohanlal</h5>
+            <p class="card-text">Mohanlal is Woody Sofas customer who transformed their living space into a haven of
+              comfort and luxury...</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://i3.wp.com/www.thetalentedindian.com/wp-content/uploads/2020/12/Rajnikanth.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rajini Kanth</h5>
+            <p class="card-text">For Rajini Kanth, his vision of home was clear from the start: a space filled with
+              warmth and positive energy...</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="row  justify-content-lg-between flex">
+        <div class="card " style="width: 18rem;">
+          <img
+            src="https://img.mathrubhumi.com/view/acePublic/alias/contentid/1k81csamaim54tbbmx5/0/mammootty-photo-mathrubhumi.webp?f=3%3A2&q=0.75&w=900"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mammootty</h5>
+            <p class="card-text">This is the story of Mammootty House, a residential project by Ashwin Architects. In
+              it, and joining...</p>
+          </div>
+        </div>
+        <div class="card " style="width: 18rem;">
+          <img src="https://img.mensxp.com/media/content/2021/Jan/10_5ffade95011e7.jpeg?w=780&h=536&cc=1"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hrithik Roshan</h5>
+            <p class="card-text">Here is the story of Hrithik House, a residential project by PR Design Group.He shares
+              delightful Woody Sofas showroom experience...</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://www.bollywoodhungama.com/wp-content/uploads/2021/07/Thalapathy-Vijay-re-appeals-Madras-High-Courts-statement-after-being-fined-Rs.-1-lakh-for-importing-swanky-car-1.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vijay</h5>
+            <p class="card-text">Vijay purchased our entire home furniture.He referred to all his friends and
+              family...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>.
+  <br><br>
+  <section id="Service">
+    <h2 class="text-center my-3">Our Services</h2>
+    <br><br>
+    <div class="row ">
+      <div class="col text-center"><i class="fa-solid fa-truck-fast p-3 fs-1"></i>
+        <h5 class="ts-1 fw-bold ">Fast Delivery</h5>
+      </div>
+      <div class="col text-center"><i class="fa-solid fa-ribbon p-3 fs-1"></i>
+        <h5 class="ts-1 fw-bold ">Lowest Price</h5>
+      </div>
+      <div class="col text-center"><i class="fa-solid fa-rotate-left p-3 fs-1"></i>
+        <h5 class="ts-1 fw-bold ">100% Return Policy</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fa-solid fa-couch"></i> Woody
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
